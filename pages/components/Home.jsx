@@ -1,7 +1,6 @@
 import styles from '../../styles.module.css'
 import Description from './Description'
 import Social from './Social'
-import Image from './Image'
 
 export default function Home() {
   return (
