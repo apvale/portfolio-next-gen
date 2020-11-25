@@ -3,14 +3,11 @@ import Description from './Description'
 import Social from './Social'
 import Image from './Image'
 
-function Home() {
+export default function Home() {
   return (
     <div className={styles.container}>
       <Description />
       <Social />
-      {/* <Image /> */}
     </div>
   )
 }
-
-export default Home
