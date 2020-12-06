@@ -3,7 +3,7 @@ import {FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa'
 export default function Social() {
   return (
     <>
-      <div style={{display: 'flex'}}>
+      <div>
         <div style={{padding: '10px'}}>
           <FaTwitter />
         </div>
@@ -11,7 +11,6 @@ export default function Social() {
           <FaInstagram />
         </div>
         <div style={{padding: '10px'}}>
-          {' '}
           <FaLinkedin />
         </div>
       </div>
