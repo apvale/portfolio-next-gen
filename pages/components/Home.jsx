@@ -1,10 +1,10 @@
-import styles from '../../styles.module.css'
+import styles from '../../styles/styles.module.css'
 import {FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className={styles.body}>
+    <div>
       <div className={styles.container}>
         <div className={styles.avatar}>
           <Image
