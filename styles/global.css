@@ -1,4 +1,38 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,200;1,400&display=swap');
+
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #2e1b3b,#ba1f60);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-right: 30px;
+  flex-wrap: wrap;
+}
+
+nav a:hover{
+  opacity: 0.6;
+}
+
+@media (min-width: 767px) {
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+  }
 }
