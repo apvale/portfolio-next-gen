@@ -1,8 +1,8 @@
-const About = () => {
+import About from './components/About'
+
+const MainAbout = () => {
   return ( 
-    <div className="parent">
-      <div className="child"></div>
-    </div> 
+    <About />
   );
 }
  

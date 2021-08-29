@@ -1,55 +1,13 @@
-import {useState} from 'react'
 import styles from '../../styles/styles.module.css'
-import {FaBars, FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa'
 import Image from 'next/image'
+import Header from './Header.jsx'
+import {FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa'
 
 export default function Home() {
-  const [active, setActive] = useState(false)
-  const showMenu = () => {
-    setActive(!active)
-  }
-
-  const cx = (...classNames) => classNames.join(' ')
-
   return (
     <div>
       <div className={styles.container}>
-        <nav>
-          <button
-            className={styles.hamburguer}
-            id="hamburguer"
-            onClick={showMenu}
-          >
-            <FaBars size={30} />
-          </button>
-          <ul
-            className={
-              active ? cx(styles.navul, styles['show-menu']) : styles.navul
-            }
-            id="nav-ul"
-          >
-            <li>
-              <a className={styles['nav-link']} href="/">
-                HOME
-              </a>
-            </li>
-            <li>
-              <a className={styles['nav-link']} href="/about">
-                ABOUT
-              </a>
-            </li>
-            <li>
-              <a className={styles['nav-link']} href="/blog">
-                BLOG
-              </a>
-            </li>
-            <li>
-              <a className={styles['nav-link']} href="/contact">
-                CONTACT
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <Header />
         <section className={styles.maindescription}>
           <div className={styles.avatar}>
             <Image
