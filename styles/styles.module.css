@@ -130,13 +130,14 @@
     display: flex;
     visibility: visible;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     transform: translate(0);
     position: static;
     height: auto;
-    width: 100%;
     background: none;
     font-size: 20px;
+    width: 300px;
+    align-items: center;
   }
 
   .social-item {

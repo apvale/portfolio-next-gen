@@ -31,7 +31,7 @@ const Header = () => {
             ABOUT
           </a>
         </li>
-        <li>
+        {/* <li>
           <a className={styles['nav-link']} href="/blog">
             BLOG
           </a>
@@ -40,7 +40,7 @@ const Header = () => {
           <a className={styles['nav-link']} href="/contact">
             CONTACT
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   )

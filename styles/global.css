@@ -30,8 +30,7 @@ nav a:hover{
 @media (min-width: 767px) {
   nav {
     display: flex;
-    width: 100%;
-    justify-content: center;
     padding: 20px;
+    justify-content: center;
   }
 }
