@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
 .container {
   display: flex;
   width: 100%;
   height: 100vh;
   flex-direction: column;
   align-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main h1 {
+  font-family: 'Ultra', serif;
+  color: #7E5686;
+}
+
+.main span {
+  display: none;
+}
+
+.main p {
+  padding: 30px;
 }
 
 .description {
@@ -18,6 +40,7 @@
 .avatar {
   border-radius: 50%;
   margin: 30px;
+  order: 1;
 }
 
 .avatar img {
@@ -53,23 +76,24 @@
 .navul {
   display: flex;
   justify-content: center;
-  background: linear-gradient(45deg, #2e1b3b,#ba1f60);
   list-style: none;
   text-align: center;
   height: 100vh;
   width: 100vw;
   transform: translateX(-100%);
-  transition: transform 0.5s ease-in;
+  transition: transform 0.2s ease-in;
   flex-direction: column;
   z-index: 2;
   position: absolute;
   font-size: 2em;
   line-height: 3em;
+  background-color: mediumslateblue;
 }
 
 .show-menu {
   transform: translateX(0);
-  transition: transform 0.5s ease-in;
+  transition: transform 0.2s ease-in;
+  color: white;
 }
 
 .social {
@@ -95,6 +119,38 @@
 .nav-link {
   animation-duration: 2s;
   animation-name: fadeIn;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 1.5rem;
+  order: 2;
+}
+
+.intro-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.intro-buttons button {
+  margin-right: 20px;
+  appearance: none;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+  background-color: #FDC435;
+  width: 115px;
+  height: 43px;
+}
+
+.intro-buttons button:last-child {
+  background-color: white;
+  border: 2px solid #25282B;
 }
 
 /* Fade In */
@@ -128,16 +184,17 @@
 
   .navul {
     display: flex;
-    visibility: visible;
     flex-direction: row;
-    justify-content: space-around;
+    visibility: visible;
     transform: translate(0);
-    position: static;
-    height: auto;
     background: none;
-    font-size: 20px;
-    width: 300px;
-    align-items: center;
+    font-size: 18px;
+    font-family: 'Averia Sans Libre', cursive;
+    margin-top: 14px;
+    margin-right: 120px;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: static;
   }
 
   .social-item {
@@ -176,5 +233,17 @@
   .about-content {
     font-size: 1.2rem;
     max-width: 900px;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 486px;
+    height: 408px;
+    margin-left: 120px;
+    margin-top: 110px;
   }
 }

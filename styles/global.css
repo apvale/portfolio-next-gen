@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
 }
 
 body {
-  background: linear-gradient(45deg, #2e1b3b,#ba1f60);
+  background: white;
 }
 
 a {
@@ -17,9 +17,6 @@ a {
 
 nav {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  margin-right: 30px;
   flex-wrap: wrap;
 }
 
@@ -27,10 +24,25 @@ nav a:hover{
   opacity: 0.6;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   nav {
     display: flex;
-    padding: 20px;
-    justify-content: center;
+    width: 100%;
+    height: 56px;
+    margin-top: 14px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  nav span {
+    display: flex;
+    justify-content: start;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Averia Sans Libre', cursive;
+    line-height: 180%;
+    margin-left: 120px;
+    margin-top: 12px;
   }
 }
