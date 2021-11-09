@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <nav>
       <button className={styles.hamburguer} id="hamburguer" onClick={showMenu}>
-        {active ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {active ? <FaTimes size={30} /> : <FaBars color="black" size={30} />}
       </button>
       <ul
         className={
@@ -23,12 +23,12 @@ const Header = () => {
       >
         <li>
           <a className={styles['nav-link']} href="/">
-            HOME
+            Home
           </a>
         </li>
         <li>
           <a className={styles['nav-link']} href="/about">
-            ABOUT
+            About
           </a>
         </li>
         {/* <li>
