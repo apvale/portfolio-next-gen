@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,200;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,200;1,400&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
-  background: linear-gradient(45deg, #2e1b3b,#ba1f60);
+  background-color: #eddfef;
 }
 
 a {
@@ -23,7 +23,7 @@ nav {
   flex-wrap: wrap;
 }
 
-nav a:hover{
+nav a:hover {
   opacity: 0.6;
 }
 

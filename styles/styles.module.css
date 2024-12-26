@@ -8,7 +8,7 @@
 
 .description {
   display: flex;
-  color: white;
+  color: #2b193d;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -22,17 +22,21 @@
 
 .avatar img {
   border-radius: 50%;
+  background-color: #fff;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
 }
 
 .social-link {
   text-decoration: none;
-  color: white;
+  color: #2b193d;
 }
 
 .hamburguer {
   background-color: transparent;
   border: 0;
-  color: white;
+  color: #2b193d;
   font-size: 20px;
   cursor: pointer;
   display: flex;
@@ -53,7 +57,7 @@
 .navul {
   display: flex;
   justify-content: center;
-  background: linear-gradient(45deg, #2e1b3b,#ba1f60);
+  background: linear-gradient(45deg, #2e1b3b, #ba1f60);
   list-style: none;
   text-align: center;
   height: 100vh;
@@ -88,7 +92,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: white;
+  color: #2b193d;
   font-weight: 400;
 }
 
@@ -100,11 +104,11 @@
 /* Fade In */
 @keyframes fadeIn {
   0% {
-    opacity: 0; 
+    opacity: 0;
   }
   100% {
-    opacity: 1; 
-  } 
+    opacity: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -145,9 +149,7 @@
   }
 }
 
-
 /* About */
-
 
 .about {
   display: flex;

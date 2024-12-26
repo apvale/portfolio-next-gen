@@ -1,14 +1,14 @@
-import styles from '../../styles/styles.module.css'
-import {FaBars, FaTimes} from 'react-icons/fa'
-import {useState} from 'react'
+import styles from "../../styles/styles.module.css";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
 
 const Header = () => {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
   const showMenu = () => {
-    setActive(!active)
-  }
+    setActive(!active);
+  };
 
-  const cx = (...classNames) => classNames.join(' ')
+  const cx = (...classNames) => classNames.join(" ");
 
   return (
     <nav>
@@ -17,17 +17,17 @@ const Header = () => {
       </button>
       <ul
         className={
-          active ? cx(styles.navul, styles['show-menu']) : styles.navul
+          active ? cx(styles.navul, styles["show-menu"]) : styles.navul
         }
         id="nav-ul"
       >
         <li>
-          <a className={styles['nav-link']} href="/">
+          <a className={styles["nav-link"]} href="/">
             HOME
           </a>
         </li>
         <li>
-          <a className={styles['nav-link']} href="/about">
+          <a className={styles["nav-link"]} href="/about">
             ABOUT
           </a>
         </li>
@@ -43,7 +43,7 @@ const Header = () => {
         </li> */}
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
