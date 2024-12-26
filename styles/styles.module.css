@@ -6,6 +6,13 @@
   align-content: center;
 }
 
+.main-description {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: center;
+}
+
 .description {
   display: flex;
   color: #2b193d;
@@ -13,6 +20,10 @@
   align-items: center;
   text-align: center;
   padding: 20px;
+}
+
+.description h1 {
+  text-align: left;
 }
 
 .avatar {
@@ -26,6 +37,29 @@
   padding: 10px;
   width: 200px;
   height: 200px;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.resume-button {
+  background-color: #2b193d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 .social-link {
@@ -46,18 +80,19 @@
   z-index: 3;
 }
 
-.maindescription {
+.main {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 40px;
 }
 
-.navul {
+.nav-ul {
   display: flex;
   justify-content: center;
-  background: linear-gradient(45deg, #2e1b3b, #ba1f60);
+  background: #eddfef;
   list-style: none;
   text-align: center;
   height: 100vh;
@@ -78,16 +113,12 @@
 
 .social {
   display: flex;
-  justify-content: center;
-  align-items: center;
   list-style: none;
-  width: 100%;
-  margin-top: 40px;
   order: 3;
 }
 
 .social-item {
-  padding: 20px;
+  padding: 1rem;
 }
 
 .nav-link {
@@ -112,25 +143,40 @@
 }
 
 @media (min-width: 768px) {
-  .maindescription {
+  .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
+  }
+
+  .main-description {
+    flex-direction: row;
+    justify-content: center;
   }
 
   .avatar {
     order: 1;
   }
 
+  .avatar img {
+    width: 300px;
+    height: 300px;
+  }
+
   .description {
     order: 2;
+  }
+
+  .social-container {
+    flex-direction: row;
   }
 
   .hamburguer {
     display: none;
   }
 
-  .navul {
+  .nav-ul {
     display: flex;
     visibility: visible;
     flex-direction: row;
@@ -142,10 +188,6 @@
     font-size: 20px;
     width: 300px;
     align-items: center;
-  }
-
-  .social-item {
-    padding: 20px;
   }
 }
 

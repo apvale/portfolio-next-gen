@@ -17,7 +17,7 @@ const Header = () => {
       </button>
       <ul
         className={
-          active ? cx(styles.navul, styles["show-menu"]) : styles.navul
+          active ? cx(styles["nav-ul"], styles["show-menu"]) : styles["nav-ul"]
         }
         id="nav-ul"
       >
