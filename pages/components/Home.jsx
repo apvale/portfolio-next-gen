@@ -1,7 +1,7 @@
 import styles from "../../styles/styles.module.css";
 import Image from "next/image";
 import Header from "./Header.jsx";
-import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -29,7 +29,26 @@ export default function Home() {
                     <li className={styles["social-item"]}>
                       <a
                         className={styles["social-link"]}
+                        href="https://github.com/apvale"
+                        target="_blank"
+                      >
+                        <FaGithub size={30} />
+                      </a>
+                    </li>
+                    <li className={styles["social-item"]}>
+                      <a
+                        className={styles["social-link"]}
+                        href="https://www.linkedin.com/in/anapaulavale/"
+                        target="_blank"
+                      >
+                        <FaLinkedin size={30} />
+                      </a>
+                    </li>
+                    <li className={styles["social-item"]}>
+                      <a
+                        className={styles["social-link"]}
                         href="https://twitter.com/apvale"
+                        target="_blank"
                       >
                         <FaTwitter size={30} />
                       </a>
@@ -38,16 +57,9 @@ export default function Home() {
                       <a
                         className={styles["social-link"]}
                         href="https://www.instagram.com/aninhalvale/"
+                        target="_blank"
                       >
                         <FaInstagram size={30} />
-                      </a>
-                    </li>
-                    <li className={styles["social-item"]}>
-                      <a
-                        className={styles["social-link"]}
-                        href="https://www.linkedin.com/in/anapaulavale/"
-                      >
-                        <FaLinkedin size={30} />
                       </a>
                     </li>
                   </ul>
