@@ -1,5 +1,5 @@
-import Home from './components/Home'
-import Head from 'next/head'
+import Home from "./components/Home";
+import Head from "next/head";
 
 export default function App() {
   return (
@@ -11,5 +11,5 @@ export default function App() {
       </Head>
       <Home />
     </>
-  )
+  );
 }

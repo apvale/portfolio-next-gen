@@ -1,13 +1,13 @@
-import styles from '../../styles/styles.module.css'
-import Header from './Header.jsx'
+import styles from "../../styles/styles.module.css";
+import Header from "./Header.jsx";
 
 const About = () => {
   return (
     <div className={styles.container}>
       <Header />
       <div className={styles.about}>
-        <h1 className={styles['about-title']}>About me</h1>
-        <div className={styles['about-content']}>
+        <h1 className={styles["about-title"]}>About me</h1>
+        <div className={styles["about-content"]}>
           <p>
             Hi, I'm Ana and I'm Frontend Engineer. This became my career
             development goal after I transitioned from QA Engineer.
@@ -35,7 +35,7 @@ const About = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
