@@ -30,6 +30,7 @@ export default function Home() {
                       <a
                         className={styles["social-link"]}
                         href="https://github.com/apvale"
+                        target="_blank"
                       >
                         <FaGithub size={30} />
                       </a>
@@ -38,6 +39,7 @@ export default function Home() {
                       <a
                         className={styles["social-link"]}
                         href="https://www.linkedin.com/in/anapaulavale/"
+                        target="_blank"
                       >
                         <FaLinkedin size={30} />
                       </a>
@@ -46,6 +48,7 @@ export default function Home() {
                       <a
                         className={styles["social-link"]}
                         href="https://twitter.com/apvale"
+                        target="_blank"
                       >
                         <FaTwitter size={30} />
                       </a>
@@ -54,6 +57,7 @@ export default function Home() {
                       <a
                         className={styles["social-link"]}
                         href="https://www.instagram.com/aninhalvale/"
+                        target="_blank"
                       >
                         <FaInstagram size={30} />
                       </a>
