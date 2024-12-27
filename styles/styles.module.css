@@ -22,10 +22,6 @@
   padding: 20px;
 }
 
-.description h1 {
-  text-align: left;
-}
-
 .avatar {
   border-radius: 50%;
   margin: 30px;
@@ -166,6 +162,10 @@
 
   .description {
     order: 2;
+  }
+
+  .description h1 {
+    text-align: left;
   }
 
   .social-container {
