@@ -5,5 +5,3 @@
 - NextJS
 - React
 - Prettier
-
-
