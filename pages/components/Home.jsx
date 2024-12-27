@@ -22,7 +22,9 @@ export default function Home() {
               <div className={styles.presentation}>
                 <h1>Hi, I am Ana, and I’m a Frontend Engineer</h1>
                 <div className={styles["social-container"]}>
-                  <button className={styles["resume-button"]}>Resume</button>
+                  <a href="/AnaPaulaValeCV.pdf" download="AnaPaulaValeCV">
+                    <button className={styles["resume-button"]}>Resume</button>
+                  </a>
                   <ul className={styles.social}>
                     <li className={styles["social-item"]}>
                       <a
